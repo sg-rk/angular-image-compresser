@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { DataService } from './data.service';
-import { NgxImageCompressService } from 'ngx-image-compress';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 @NgModule({
   declarations: [
@@ -16,9 +16,10 @@ import { NgxImageCompressService } from 'ngx-image-compress';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ImageCropperModule
   ],
-  providers: [DataService, NgxImageCompressService],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
