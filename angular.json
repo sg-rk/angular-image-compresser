@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "angular-image-compresser"
+  "defaultProject": "angular-image-compresser",
+  "cli": {
+    "analytics": false
+  }
 }
